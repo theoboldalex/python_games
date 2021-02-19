@@ -52,6 +52,9 @@ def check_board(choice):
         '9': board[4][4],
     }
 
+    if not choice in board_position:
+        return False
+
     if not board_position[choice] == ' ':
         return False
     else:
